@@ -1,0 +1,11 @@
+DEPENDENCIES
+  nginx
+    git: git@github.com:jacosta18/Uber_nginx_cookbook.git
+    revision: 111fe9a843a562812a26e975a71d60606a710fbe
+  python
+    git: git@github.com:jacosta18/Uber_python_cookbook.git
+    revision: 704350c95279bc91a085540d88583ace273843ba
+
+GRAPH
+  nginx (0.1.0)
+  python (0.1.0)
