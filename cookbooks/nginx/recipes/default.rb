@@ -11,7 +11,6 @@ apt_update 'update_sources' do
 end
 
 package 'nginx'
-#package 'nodejs'
 service 'nginx' do
   action [:enable, :start]
 end
