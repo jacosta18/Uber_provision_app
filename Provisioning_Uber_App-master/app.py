@@ -57,8 +57,7 @@ def signup():
         'scopes': ','.join(config.get('scopes')),
     }
     url = generate_oauth_service().get_authorize_url(**params)
-    return redirect(url)
-
+    return render_template('demo.html', token='JA.VUNmGAAAAAAAEgASAAAABwAIAAwAAAAAAAAAEgAAAAAAAAG8AAAAFAAAAAAADgAQAAQAAAAIAAwAAAAOAAAAkAAAABwAAAAEAAAAEAAAALpyYkrkuV0RqJAm5fsmxfBsAAAAaraocbJW7C8-QHGYGJbzXbbgG8qCS034ELi43wx64rMN7EtLTXms0BdqQQabNvmqiPYsB5rKohcM6FiY1F9cQ_nMPdksiPa3pIP_c0-_7P7AmWkGXTRLazOEhBh8bwVsjwlYQvlv-Ai5jPXEDAAAAD52qcjZ740KytP3pCQAAABiMGQ4NTgwMy0zOGEwLTQyYjMtODA2ZS03YTRjZjhlMTk2ZWU')
 
 @app.route('/submit', methods=['GET'])
 def submit():
@@ -230,4 +229,4 @@ def get_redirect_uri(request):
 
 if __name__ == '__main__':
     app.debug = os.environ.get('FLASK_DEBUG', True)
-    app.run(port=7000)
+    app.run(port=3000)

@@ -9,5 +9,12 @@
     "start_latitude": "37.781955",
     "start_longitude":  "-122.402367",
     "end_latitude": "37.744352",
-    "end_longitude": "-122.416743"
+    "end_longitude": "-122.416743",
+    "env": {
+      "UBER_CLIENT_ID": {
+        "description": "4TiPeyzFSRIynZVzbI2fGXNvl4r8whCl"
+      },
+      "UBER_CLIENT_SECRET": {
+        "description": "x5wDegVnRmdpl2P8a362dewu33oN-H0kClKWTIAC"
+      }
 }

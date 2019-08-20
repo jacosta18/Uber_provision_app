@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     python.vm.box = "ubuntu/xenial64"
     python.vm.network "private_network", ip: "192.168.10.100"
     python.hostsupdater.aliases = ["development.local"]
-    python.vm.synced_folder 
+    python.vm.synced_folder "provisioning_uber_app-master", "/home/ubuntu/provisioning_uber_app-master"
     python.vm.provision "chef_solo" do |chef|
       chef.arguments = "--chef-license accept"
       chef.add_recipe "python::default"
